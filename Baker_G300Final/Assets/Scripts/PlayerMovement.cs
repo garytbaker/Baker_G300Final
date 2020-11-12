@@ -22,4 +22,12 @@ public class PlayerMovement : MonoBehaviour
     {
         playerRigidBody.MovePosition(playerRigidBody.position + movement * moveSpeed * Time.deltaTime);
     }
+
+    private void OnTriggerEnter(Collision2D collision)
+    {
+       if (collision.gameObject.tag == "Cassette")
+        {
+
+        }
+    }
 }

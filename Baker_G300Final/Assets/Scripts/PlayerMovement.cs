@@ -27,8 +27,8 @@ public class PlayerMovement : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        print(collision.gameObject.tag);
-       if (collision.gameObject.tag == "Cassette")
+        print(collision.tag);
+       if (collision.tag == "Cassette")
         {
             cassetteController.addCassette(collision.gameObject.GetComponent<CassetteData>().cassetteNumber);
             collision.gameObject.SetActive(false);

@@ -57,6 +57,7 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
     <Compile Include="Assets\Scripts\CassetteController.cs" />
+    <Compile Include="Assets\Scripts\CassetteData.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

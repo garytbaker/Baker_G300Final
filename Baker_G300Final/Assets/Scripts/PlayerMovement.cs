@@ -10,7 +10,7 @@ public class PlayerMovement : MonoBehaviour
 
     Vector2 movement;
 
-    public CassetteController;
+    public CassetteController cassetteController;
   
     // Update is called once per frame
     void Update()
@@ -25,11 +25,14 @@ public class PlayerMovement : MonoBehaviour
         playerRigidBody.MovePosition(playerRigidBody.position + movement * moveSpeed * Time.deltaTime);
     }
 
-    private void OnTriggerEnter(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
+        print(collision.gameObject.tag);
        if (collision.gameObject.tag == "Cassette")
         {
-            CassetteController.addCassette(collision.gameObject.GetComponent<CassetteData>().cassetteNumber);
+            cassetteController.addCassette(collision.gameObject.GetComponent<CassetteData>().cassetteNumber);
+            collision.gameObject.SetActive(false);
+            print("collided");
         }
     }
 }

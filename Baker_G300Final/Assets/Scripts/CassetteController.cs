@@ -4,15 +4,11 @@ using UnityEngine;
 
 public class CassetteController : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public int[] inventory = {0,0,0,0,0,0,0,0,0,0};
+    
+    public int numberOfCassettes = 0;
+    public void addCassette(int cassetteNumber)
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        inventory[numberOfCassettes] = cassetteNumber;
     }
 }

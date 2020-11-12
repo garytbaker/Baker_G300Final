@@ -9,6 +9,8 @@ public class PlayerMovement : MonoBehaviour
     public Rigidbody2D playerRigidBody;
 
     Vector2 movement;
+
+    public CassetteController;
   
     // Update is called once per frame
     void Update()
@@ -27,7 +29,7 @@ public class PlayerMovement : MonoBehaviour
     {
        if (collision.gameObject.tag == "Cassette")
         {
-
+            CassetteController.addCassette(collision.gameObject.GetComponent<CassetteData>().cassetteNumber);
         }
     }
 }

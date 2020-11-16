@@ -1514,6 +1514,17 @@ MonoBehaviour:
   currentSong: 0
   needsToSwitch: 0
   numberOfCassettes: 0
+  songs:
+  - {fileID: 267758286}
+  - {fileID: 356651064}
+  - {fileID: 21059093}
+  - {fileID: 491114112}
+  - {fileID: 1760394669}
+  - {fileID: 1942435539}
+  - {fileID: 1213099575}
+  - {fileID: 737989842}
+  - {fileID: 198667350}
+  - {fileID: 1509439106}
 --- !u!1 &1509439104
 GameObject:
   m_ObjectHideFlags: 0

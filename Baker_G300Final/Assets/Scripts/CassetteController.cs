@@ -8,6 +8,7 @@ public class CassetteController : MonoBehaviour
     public int currentSong = 0;
     public bool needsToSwitch = false;
     public int numberOfCassettes = 0;
+    public AudioSource[] songs;
     public void addCassette(int cassetteNumber)
     {
         inventory[numberOfCassettes] = cassetteNumber;

@@ -1510,7 +1510,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f72ce21f955242f4d978c30740bd8085, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inventory: 00000000000000000000000000000000000000000000000000000000000000000000000000000000
+  inventory: 00000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
   currentSong: 0
   needsToSwitch: 0
   numberOfCassettes: 0

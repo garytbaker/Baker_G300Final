@@ -9,6 +9,7 @@ public class CassetteController : MonoBehaviour
     int numberOfCassettes = 1;  //this is the number of cassettes collected. used to add more songs to the inventory
     public AudioClip[] songs;  //the array of the songs. the number in teh inventory array correspond to the index in this array
     public static CassetteController CC;
+    private AudioSource walkman;
     public void addCassette(int cassetteNumber)
     {
         inventory[numberOfCassettes] = cassetteNumber; //add the cassette to the next open spot in the array
@@ -30,7 +31,9 @@ public class CassetteController : MonoBehaviour
     }
     private void Start()
     {
-       // songs[inventory[0]].Play();  //play the first song at the start of the game
+        walkman = this.gameObject.GetComponent<AudioSource>();
+        walkman.clip = songs[0];
+        walkman.Play();  //play the first song at the start of the game
         currentSong = inventory[0];     //make sure the correct song is the currentSong
     }
 

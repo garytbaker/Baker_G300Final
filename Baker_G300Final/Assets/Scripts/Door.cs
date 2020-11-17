@@ -6,16 +6,23 @@ public class Door : MonoBehaviour
 {
     public AudioSource openSong;
     public Vector2 newLocation;
+    public int doorSpeed;
+    public Rigidbody2D thisRB;
+
+    bool opened = false;
     void Update()
     {
         if(openSong.isPlaying)
         {
-            moveToNewLocation();
+            opened = true;
         }
     }
 
-    void moveToNewLocation()
+    private void FixedUpdate()
     {
-
+        if (opened == true)
+        {
+            thisRB.MovePosition(newLocation);
+        }
     }
 }

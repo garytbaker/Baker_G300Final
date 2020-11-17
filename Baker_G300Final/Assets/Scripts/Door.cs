@@ -8,12 +8,13 @@ public class Door : MonoBehaviour
     public Vector3 newLocation = new Vector3(0,0,0);
     public int doorSpeed;
     public Rigidbody2D thisRB;
+    public GameObject player;
 
     bool opening = false;
     bool opened = false;
     void Update()
     {
-        if(openSong.isPlaying)
+        if(openSong.isPlaying && (player.transform.position-transform.position).sqrMagnitude < 4)
         {
             opening = true;
         }

@@ -9,21 +9,25 @@ public class Door : MonoBehaviour
     public int doorSpeed;
     public Rigidbody2D thisRB;
 
+    bool opening = false;
     bool opened = false;
     void Update()
     {
         if(openSong.isPlaying)
         {
-            opened = true;
+            opening = true;
         }
     }
 
     private void FixedUpdate()
     {
-        if (opened == true)
+        if (opened == false && opening ==true)
         {
-            print("here");
-            Vector3.MoveTowards(transform.position,newLocation,Time.deltaTime*doorSpeed);
+            transform.position = Vector3.MoveTowards(transform.position,newLocation,Time.deltaTime*doorSpeed);
+            if (transform.position == newLocation)
+            {
+                opened = true;
+            }
         }
     }
 }

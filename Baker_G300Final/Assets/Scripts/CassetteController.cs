@@ -80,7 +80,7 @@ public class CassetteController : MonoBehaviour
         else if (Input.GetKeyUp("9") && inventory[8] >= 0)
         {
             songs[inventory[currentSong]].Stop();
-            currentSong = inventory[8];
+            currentSong = inventory[8]; 
             songs[inventory[currentSong]].Play();
         }
     }

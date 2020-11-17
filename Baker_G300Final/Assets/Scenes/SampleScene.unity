@@ -1469,6 +1469,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   openSong: {fileID: 356651064}
   newLocation: {x: 0, y: 0}
+  doorSpeed: 1
+  thisRB: {fileID: 993526061}
 --- !u!50 &993526061
 Rigidbody2D:
   serializedVersion: 4

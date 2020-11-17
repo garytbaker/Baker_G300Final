@@ -2395,6 +2395,10 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 525943001}
+    - target: {fileID: 3566790971330944770, guid: 339d86d67a9f51e4faa111c470757846, type: 3}
+      propertyPath: openSongDistance
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 3566790971330944772, guid: 339d86d67a9f51e4faa111c470757846, type: 3}
       propertyPath: m_Name
       value: Door

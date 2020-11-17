@@ -9,12 +9,13 @@ public class Door : MonoBehaviour
     public int doorSpeed;
     public Rigidbody2D thisRB;
     public GameObject player;
+    public int openSongDistance;
 
     bool opening = false;
     bool opened = false;
     void Update()
     {
-        if(openSong.isPlaying && (player.transform.position-transform.position).sqrMagnitude < 4)
+        if(openSong.isPlaying && (player.transform.position-transform.position).sqrMagnitude < openSongDistance)
         {
             opening = true;
         }

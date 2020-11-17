@@ -4,35 +4,34 @@ using UnityEngine;
 
 public class CassetteController : MonoBehaviour
 {
-    public int[] inventory = { 0, -1,-1, -1, -1, -1, -1, -1, -1, -1 };
-    public int currentSong = 0;
-    public bool needsToSwitch = false;
-    int numberOfCassettes = 1;
-    public AudioSource[] songs;
+    public int[] inventory = { 0, -1,-1, -1, -1, -1, -1, -1, -1, -1 }; //this is the inventory that keeps track of where the songs are
+    public int currentSong = 0;  //this is the current song that is playing
+    int numberOfCassettes = 1;  //this is the number of cassettes collected. used to add more songs to the inventory
+    public AudioSource[] songs;  //the array of the songs. the number in teh inventory array correspond to the index in this array
     public void addCassette(int cassetteNumber)
     {
-        inventory[numberOfCassettes] = cassetteNumber;
-        numberOfCassettes += 1;
+        inventory[numberOfCassettes] = cassetteNumber; //add the cassette to the next open spot in the array
+        numberOfCassettes += 1;  //add one to the total number of cassettes 
     }
 
     private void Start()
     {
-        songs[inventory[0]].Play();
-        currentSong = inventory[0];
+        songs[inventory[0]].Play();  //play the first song at the start of the game
+        currentSong = inventory[0];     //make sure the correct song is the currentSong
     }
 
     private void Update()
     {
-        if(Input.GetKeyUp("0") && inventory[9] >= 0)
+        if(Input.GetKeyUp("0") && inventory[9] >= 0) //if the input of the player matcxhes a spot in the inventory that has a cassette
         {
-            songs[currentSong].Stop();
-            currentSong = inventory[9];
-            songs[currentSong].Play();
+            songs[currentSong].Stop(); //then stop the current song
+            currentSong = inventory[9]; 
+            songs[currentSong].Play();  //and play the next song
         }
-        else if (Input.GetKeyUp("1") && inventory[0] >= 0)
-        {
-            songs[currentSong].Stop();
-            currentSong = inventory[0];
+        else if (Input.GetKeyUp("1") && inventory[0] >= 0) //the same as the last statement. important to note the index are off by 1
+        {                                                  //this is because the keyboard numbers are ordered   1234567890
+            songs[currentSong].Stop();                     //but the array is set up like                       0123456789
+            currentSong = inventory[0];                    // by offsetting, the layout of each matches up
             songs[currentSong].Play();
         }
         else if (Input.GetKeyUp("2") && inventory[1] >= 0)

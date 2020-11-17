@@ -45,59 +45,75 @@ public class CassetteController : MonoBehaviour
             walkman.clip = songs[currentSong];
             walkman.Play();  //and play the next song
         }
-       /* else if (Input.GetKeyUp("1") && inventory[0] >= 0) //the same as the last statement. important to note the index are off by 1
+        else if (Input.GetKeyUp("1") && inventory[0] >= 0) //the same as the last statement. important to note the index are off by 1
         {                                                  //this is because the keyboard numbers are ordered   1234567890
-            songs[currentSong].Stop();                     //but the array is set up like                       0123456789
+                                                           //but the array is set up like                       0123456789
             currentSong = inventory[0];                    // by offsetting, the layout of each matches up
-            songs[currentSong].Play();
+            walkman.clip = songs[currentSong];
+            walkman.Play();  //and play the next song
         }
         else if (Input.GetKeyUp("2") && inventory[1] >= 0)
         {
-            songs[currentSong].Stop();
+            
             currentSong = inventory[1];
-            songs[currentSong].Play();
+            walkman.clip = songs[currentSong];
+            walkman.Play();  
+
         }
         else if (Input.GetKeyUp("3") && inventory[2] >= 0)
         {
-            songs[currentSong].Stop();
+            
             currentSong = inventory[2];
-            songs[currentSong].Play();
+            walkman.clip = songs[currentSong];
+            walkman.Play();
+
         }
         else if (Input.GetKeyUp("4") && inventory[3] >= 0)
         {
-            songs[currentSong].Stop();
+            
             currentSong = inventory[3];
-            songs[currentSong].Play();
+            walkman.clip = songs[currentSong];
+            walkman.Play();
+
         }
         else if (Input.GetKeyUp("5") && inventory[4] >= 0)
         {
-            songs[currentSong].Stop();
+          
             currentSong = inventory[4];
-            songs[currentSong].Play();
+            walkman.clip = songs[currentSong];
+            walkman.Play();
+
         }
         else if (Input.GetKeyUp("6") && inventory[5] >= 0)
         {
-            songs[currentSong].Stop();
+            
             currentSong = inventory[5];
-            songs[currentSong].Play();
+            walkman.clip = songs[currentSong];
+            walkman.Play();
+
         }
         else if (Input.GetKeyUp("7") && inventory[6] >= 0)
         {
-            songs[currentSong].Stop();
+            
             currentSong = inventory[6];
-            songs[currentSong].Play();
+            walkman.clip = songs[currentSong];
+            walkman.Play();
+
         }
         else if (Input.GetKeyUp("8") && inventory[7] >= 0)
         {
-            songs[currentSong].Stop();
+          
             currentSong = inventory[7];
-            songs[currentSong].Play();
+            walkman.clip = songs[currentSong];
+            walkman.Play();
+            ;
         }
         else if (Input.GetKeyUp("9") && inventory[8] >= 0)
         {
-            songs[currentSong].Stop();
+            
             currentSong = inventory[8];
-            songs[currentSong].Play();
-        }*/
+            walkman.clip = songs[currentSong];
+            walkman.Play();
+        }
     }
 }

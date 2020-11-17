@@ -1467,7 +1467,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a67a9d7dde66954fad2bd8adf380d1c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  openSong: {fileID: 0}
+  openSong: {fileID: 356651064}
   newLocation: {x: 0, y: 0}
 --- !u!50 &993526061
 Rigidbody2D:

@@ -5,7 +5,7 @@ using UnityEngine;
 public class Door : MonoBehaviour
 {
     public AudioSource openSong;
-    public Vector2 newLocation;
+    public Vector3 newLocation = new Vector3(0,0,0);
     public int doorSpeed;
     public Rigidbody2D thisRB;
 
@@ -22,7 +22,8 @@ public class Door : MonoBehaviour
     {
         if (opened == true)
         {
-            thisRB.MovePosition(newLocation);
+            print("here");
+            Vector3.MoveTowards(transform.position,newLocation,Time.deltaTime*doorSpeed);
         }
     }
 }

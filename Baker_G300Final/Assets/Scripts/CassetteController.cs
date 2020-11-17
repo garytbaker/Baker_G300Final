@@ -39,13 +39,13 @@ public class CassetteController : MonoBehaviour
 
     private void Update()
     {
-      /*  if(Input.GetKeyUp("0") && inventory[9] >= 0) //if the input of the player matcxhes a spot in the inventory that has a cassette
+        if(Input.GetKeyUp("0") && inventory[9] >= 0) //if the input of the player matcxhes a spot in the inventory that has a cassette
         {
-            songs[currentSong].Stop(); //then stop the current song
-            currentSong = inventory[9]; 
-            songs[currentSong].Play();  //and play the next song
+            currentSong = inventory[9];
+            walkman.clip = songs[currentSong];
+            walkman.Play();  //and play the next song
         }
-        else if (Input.GetKeyUp("1") && inventory[0] >= 0) //the same as the last statement. important to note the index are off by 1
+       /* else if (Input.GetKeyUp("1") && inventory[0] >= 0) //the same as the last statement. important to note the index are off by 1
         {                                                  //this is because the keyboard numbers are ordered   1234567890
             songs[currentSong].Stop();                     //but the array is set up like                       0123456789
             currentSong = inventory[0];                    // by offsetting, the layout of each matches up

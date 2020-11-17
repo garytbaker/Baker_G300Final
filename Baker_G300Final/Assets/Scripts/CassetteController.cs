@@ -12,6 +12,7 @@ public class CassetteController : MonoBehaviour
     public void addCassette(int cassetteNumber)
     {
         inventory[numberOfCassettes] = cassetteNumber;
+        numberOfCassettes += 1;
     }
 
     private void Start()
@@ -25,61 +26,61 @@ public class CassetteController : MonoBehaviour
         if(Input.GetKeyUp("0") && inventory[9] >= 0)
         {
             songs[inventory[currentSong]].Stop();
-            currentSong = 9;
+            currentSong = inventory[9];
             songs[inventory[currentSong]].Play();
         }
         else if (Input.GetKeyUp("1") && inventory[0] >= 0)
         {
             songs[inventory[currentSong]].Stop();
-            currentSong = 0;
+            currentSong = inventory[0];
             songs[inventory[currentSong]].Play();
         }
         else if (Input.GetKeyUp("2") && inventory[1] >= 0)
         {
             songs[inventory[currentSong]].Stop();
-            currentSong = 1;
+            currentSong = inventory[1];
             songs[inventory[currentSong]].Play();
         }
         else if (Input.GetKeyUp("3") && inventory[2] >= 0)
         {
             songs[inventory[currentSong]].Stop();
-            currentSong = 2;
+            currentSong = inventory[2];
             songs[inventory[currentSong]].Play();
         }
         else if (Input.GetKeyUp("4") && inventory[3] >= 0)
         {
             songs[inventory[currentSong]].Stop();
-            currentSong = 3;
+            currentSong = inventory[3];
             songs[inventory[currentSong]].Play();
         }
         else if (Input.GetKeyUp("5") && inventory[4] >= 0)
         {
             songs[inventory[currentSong]].Stop();
-            currentSong = 4;
+            currentSong = inventory[4];
             songs[inventory[currentSong]].Play();
         }
         else if (Input.GetKeyUp("6") && inventory[5] >= 0)
         {
             songs[inventory[currentSong]].Stop();
-            currentSong = 5;
+            currentSong = inventory[5];
             songs[inventory[currentSong]].Play();
         }
         else if (Input.GetKeyUp("7") && inventory[6] >= 0)
         {
             songs[inventory[currentSong]].Stop();
-            currentSong = 6;
+            currentSong = inventory[6];
             songs[inventory[currentSong]].Play();
         }
         else if (Input.GetKeyUp("8") && inventory[7] >= 0)
         {
             songs[inventory[currentSong]].Stop();
-            currentSong = 7;
+            currentSong = inventory[7];
             songs[inventory[currentSong]].Play();
         }
         else if (Input.GetKeyUp("9") && inventory[8] >= 0)
         {
             songs[inventory[currentSong]].Stop();
-            currentSong = 8;
+            currentSong = inventory[8];
             songs[inventory[currentSong]].Play();
         }
     }

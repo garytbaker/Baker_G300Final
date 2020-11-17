@@ -4,31 +4,30 @@ using UnityEngine;
 
 public class Door : MonoBehaviour
 {
-    public AudioSource openSong;
-    public Vector3 newLocation = new Vector3(0,0,0);
-    public int doorSpeed;
-    public Rigidbody2D thisRB;
-    public GameObject player;
-    public int openSongDistance;
+    public AudioSource openSong;  //this is teh song that will open the door
+    public Vector3 newLocation = new Vector3(0,0,0); //this is the new location for the door to go to when opened
+    public int doorSpeed;  //how fast the door should open
+    public GameObject player;  //reference to the player
+    public int openSongDistance;  //the distance the player can be wehn playing the song for the door to open
 
-    bool opening = false;
-    bool opened = false;
+    bool opening = false;  //if the door should be opening
+    bool opened = false;  //if the door is at its destination
     void Update()
-    {
+    {       //if the right song is playing and the player is close enough
         if(openSong.isPlaying && (player.transform.position-transform.position).sqrMagnitude < openSongDistance)
         {
-            opening = true;
+            opening = true; //the door should be opening
         }
     }
 
     private void FixedUpdate()
-    {
+    {       //if the door should be opening and the door has not reached its destination
         if (opened == false && opening ==true)
         {
-            transform.position = Vector3.MoveTowards(transform.position,newLocation,Time.deltaTime*doorSpeed);
-            if (transform.position == newLocation)
+            transform.position = Vector3.MoveTowards(transform.position,newLocation,Time.deltaTime*doorSpeed); //move the door towards its destination
+            if (transform.position == newLocation) //if it is at the new destination
             {
-                opened = true;
+                opened = true;  //it is opened
             }
         }
     }

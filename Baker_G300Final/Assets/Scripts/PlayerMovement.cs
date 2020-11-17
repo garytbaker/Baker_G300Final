@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -10,7 +11,6 @@ public class PlayerMovement : MonoBehaviour
 
     Vector2 movement;  //the movement the player needs
 
-    public CassetteController cassetteController;  //reference to teh cassette controller
   
     // Update is called once per frame
     void Update()
@@ -18,6 +18,11 @@ public class PlayerMovement : MonoBehaviour
         movement.x = Input.GetAxisRaw("Horizontal");  //getting input from the player
         movement.y = Input.GetAxisRaw("Vertical");
         movement.Normalize();                           //normalizing it so the player goes the same speed in all directions
+        if (Input.GetKey("space"))
+        {
+            print("here");
+            SceneManager.LoadScene(1);
+        }
     }
 
     private void FixedUpdate()
@@ -29,7 +34,7 @@ public class PlayerMovement : MonoBehaviour
     {
        if (collision.tag == "Cassette")                 //if the player collides with a cassette
         {
-            cassetteController.addCassette(collision.gameObject.GetComponent<CassetteData>().cassetteNumber);  //add the cassette to the inventory
+            CassetteController.CC.addCassette(collision.gameObject.GetComponent<CassetteData>().cassetteNumber);  //add the cassette to the inventory
             collision.gameObject.SetActive(false); //remove the cassette from the scene
         }
     }

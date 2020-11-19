@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Door : MonoBehaviour
 {
-    public AudioSource openSong;  //this is teh song that will open the door
+    public AudioClip rightSong; //the song for the door to open for
     public Vector3 newLocation = new Vector3(0,0,0); //this is the new location for the door to go to when opened
     public int doorSpeed;  //how fast the door should open
     public GameObject player;  //reference to the player
@@ -13,8 +13,8 @@ public class Door : MonoBehaviour
     bool opening = false;  //if the door should be opening
     bool opened = false;  //if the door is at its destination
     void Update()
-    {       //if the right song is playing and the player is close enough
-        if(openSong.isPlaying && (player.transform.position-transform.position).sqrMagnitude < openSongDistance)
+    {       //if the right song is playing and the player is close enough(sqr magnitude is to account for a negative vector)
+        if(CassetteController.CC.GetComponent<AudioSource>().clip ==  rightSong && (player.transform.position-transform.position).sqrMagnitude < openSongDistance)
         {
             opening = true; //the door should be opening
         }

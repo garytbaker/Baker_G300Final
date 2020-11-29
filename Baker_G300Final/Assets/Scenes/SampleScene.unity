@@ -135,7 +135,7 @@ GameObject:
   - component: {fileID: 252498631}
   m_Layer: 0
   m_Name: New Sprite
-  m_TagString: Untagged
+  m_TagString: Orb
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1005,7 +1005,7 @@ GameObject:
   - component: {fileID: 1668975684}
   m_Layer: 0
   m_Name: Orb
-  m_TagString: Untagged
+  m_TagString: Orb
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1053,6 +1053,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85601afb5264504499ba2fee5e0684f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  orbNumber: 0
 --- !u!4 &1708916593 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3486163373111331516, guid: 22b0dbc97d8778742ba7edabc10e7c31, type: 3}

@@ -10,12 +10,19 @@ public class CassetteController : MonoBehaviour
     public AudioClip[] songs;  //the array of the songs. the number in teh inventory array correspond to the index in this array
     public static CassetteController CC;
     private AudioSource walkman;
+
+
+    bool[] orbs = { false,false };//this is the orb inventory
     public void addCassette(int cassetteNumber)
     {
         inventory[numberOfCassettes] = cassetteNumber; //add the cassette to the next open spot in the array
         numberOfCassettes += 1;  //add one to the total number of cassettes 
     }
 
+    public void addOrb(int orbNumber)
+    {
+        orbs[orbNumber] = true;
+    }
     private void Awake()
     {
         if (CC==null)

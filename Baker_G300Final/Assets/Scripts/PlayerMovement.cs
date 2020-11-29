@@ -37,5 +37,10 @@ public class PlayerMovement : MonoBehaviour
             CassetteController.CC.addCassette(collision.gameObject.GetComponent<CassetteData>().cassetteNumber);  //add the cassette to the inventory
             collision.gameObject.SetActive(false); //remove the cassette from the scene
         }
+       if(collision.tag == "Orb")
+        {
+            CassetteController.CC.addOrb(collision.gameObject.GetComponent<OrbData>().OrbNumber);
+            collision.gameObject.SetActive(false);
+        }
     }
 }

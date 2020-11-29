@@ -60,6 +60,7 @@
     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
     <Compile Include="Assets\Scripts\CassetteController.cs" />
     <Compile Include="Assets\Scripts\OrbData.cs" />
+    <Compile Include="Assets\Scripts\Portal.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

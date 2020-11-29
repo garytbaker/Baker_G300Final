@@ -15,7 +15,7 @@ public class CassetteController : MonoBehaviour
     public bool[] orbs = { false,false };//this is the orb inventory
     public void addCassette(int cassetteNumber)
     {
-        inventory[numberOfCassettes] = cassetteNumber; //add the cassette to the next open spot in the array
+        inventory[cassetteNumber] = cassetteNumber; //add the cassette to the next open spot in the array
         numberOfCassettes += 1;  //add one to the total number of cassettes 
     }
 

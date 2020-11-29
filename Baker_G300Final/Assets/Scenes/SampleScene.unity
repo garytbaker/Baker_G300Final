@@ -1002,6 +1002,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1668975682}
   - component: {fileID: 1668975683}
+  - component: {fileID: 1668975684}
   m_Layer: 0
   m_Name: Orb
   m_TagString: Untagged
@@ -1034,12 +1035,24 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.5
+--- !u!114 &1668975684
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1668975681}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 85601afb5264504499ba2fee5e0684f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1708916593 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3486163373111331516, guid: 22b0dbc97d8778742ba7edabc10e7c31, type: 3}

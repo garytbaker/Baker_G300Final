@@ -4,5 +4,5 @@ using UnityEngine;
 
 public class OrbData : MonoBehaviour
 {
-    public int orbNumber;
+    public int orbNumber = 0;
 }

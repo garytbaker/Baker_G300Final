@@ -39,7 +39,7 @@ public class PlayerMovement : MonoBehaviour
         }
        if(collision.tag == "Orb")
         {
-            CassetteController.CC.addOrb(collision.gameObject.GetComponent<OrbData>().OrbNumber);
+            CassetteController.CC.addOrb(collision.gameObject.GetComponent<OrbData>().orbNumber);
             collision.gameObject.SetActive(false);
         }
     }

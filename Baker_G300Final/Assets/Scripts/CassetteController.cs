@@ -12,7 +12,7 @@ public class CassetteController : MonoBehaviour
     private AudioSource walkman;
 
 
-    bool[] orbs = { false,false };//this is the orb inventory
+    public bool[] orbs = { false,false };//this is the orb inventory
     public void addCassette(int cassetteNumber)
     {
         inventory[numberOfCassettes] = cassetteNumber; //add the cassette to the next open spot in the array

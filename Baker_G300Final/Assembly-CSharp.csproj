@@ -56,9 +56,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\CassetteData.cs" />
+    <Compile Include="Assets\Scripts\Door.cs" />
     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
     <Compile Include="Assets\Scripts\CassetteController.cs" />
-    <Compile Include="Assets\Scripts\Door.cs" />
+    <Compile Include="Assets\Scripts\OrbData.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

@@ -8,9 +8,9 @@ public class CassetteController : MonoBehaviour
     public int currentSong = 0;  //this is the current song that is playing
     int numberOfCassettes = 0;  //this is the number of cassettes collected. used to add more songs to the inventory
     public AudioClip[] songs;  //the array of the songs. the number in teh inventory array correspond to the index in this array
-    public static CassetteController CC;
-    private AudioSource walkman;
-    public UIScript userInterface;
+    public static CassetteController CC;  //used for the singleton pattern
+    private AudioSource walkman; //the source that will play the different audio clips
+    public UIScript userInterface;  //the UI reference so the controller can interact with the UI
 
 
     public bool[] orbs = { false,false };//this is the orb inventory
@@ -18,19 +18,19 @@ public class CassetteController : MonoBehaviour
     {
         inventory[cassetteNumber] = cassetteNumber; //add the cassette to the next open spot in the array
         numberOfCassettes += 1;  //add one to the total number of cassettes
-        userInterface.unlockCassette(cassetteNumber);
+        userInterface.unlockCassette(cassetteNumber); //puts the icon on the hotbar
     }
 
     public void addOrb(int orbNumber)
     {
-        orbs[orbNumber] = true;
+        orbs[orbNumber] = true; //sets the orb space to be true when an orb is collected
     }
     private void Awake()
     {
-        if (CC==null)
+        if (CC==null) //if there is no signleton CassetteController
         {
-            CC = this;
-            DontDestroyOnLoad(gameObject);
+            CC = this;//make this the singleton
+            DontDestroyOnLoad(gameObject);//make it persitent through scenes
         }
         else
         {

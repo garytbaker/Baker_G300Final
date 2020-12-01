@@ -25,6 +25,13 @@ public class Portal : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
-
+            StartCoroutine(textDeactivator());
         }
+    }
+
+    IEnumerator textDeactivator()
+    {
+        yield return new WaitForSeconds(1);
+        gameObject.transform.GetChild(1).gameObject.SetActive(false);
+    }
 }

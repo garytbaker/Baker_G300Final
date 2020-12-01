@@ -4,19 +4,21 @@ using UnityEngine;
 
 public class CassetteController : MonoBehaviour
 {
-    public int[] inventory = { 0, -1,-1, -1, -1, -1, -1, -1, -1, -1 }; //this is the inventory that keeps track of where the songs are
+    public int[] inventory = { -1, -1,-1, -1, -1, -1, -1, -1, -1, -1 }; //this is the inventory that keeps track of where the songs are
     public int currentSong = 0;  //this is the current song that is playing
     int numberOfCassettes = 1;  //this is the number of cassettes collected. used to add more songs to the inventory
     public AudioClip[] songs;  //the array of the songs. the number in teh inventory array correspond to the index in this array
     public static CassetteController CC;
     private AudioSource walkman;
+    public UIScript userInterface;
 
 
     public bool[] orbs = { false,false };//this is the orb inventory
     public void addCassette(int cassetteNumber)
     {
         inventory[cassetteNumber] = cassetteNumber; //add the cassette to the next open spot in the array
-        numberOfCassettes += 1;  //add one to the total number of cassettes 
+        numberOfCassettes += 1;  //add one to the total number of cassettes
+        userInterface.unlockCassette(cassetteNumber);
     }
 
     public void addOrb(int orbNumber)
@@ -38,6 +40,7 @@ public class CassetteController : MonoBehaviour
     }
     private void Start()
     {
+        addCassette(0);
         walkman = this.gameObject.GetComponent<AudioSource>();
         walkman.clip = songs[0];
         walkman.Play();  //play the first song at the start of the game

@@ -22,7 +22,7 @@ public class UIScript : MonoBehaviour
     {
         for(int i =0; i < 10; i++) 
         {
-            icons[i].color = Color.grey;
+            icons[i].color = new Color(.7f,.7f,.7f,1);
         }
         icons[cassetteNumber].color = Color.white;
     }

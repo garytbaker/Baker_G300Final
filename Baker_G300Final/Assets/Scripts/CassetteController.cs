@@ -6,7 +6,7 @@ public class CassetteController : MonoBehaviour
 {
     public int[] inventory = { -1, -1,-1, -1, -1, -1, -1, -1, -1, -1 }; //this is the inventory that keeps track of where the songs are
     public int currentSong = 0;  //this is the current song that is playing
-    int numberOfCassettes = 1;  //this is the number of cassettes collected. used to add more songs to the inventory
+    int numberOfCassettes = 0;  //this is the number of cassettes collected. used to add more songs to the inventory
     public AudioClip[] songs;  //the array of the songs. the number in teh inventory array correspond to the index in this array
     public static CassetteController CC;
     private AudioSource walkman;

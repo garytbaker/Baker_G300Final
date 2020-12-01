@@ -34,28 +34,28 @@ public class CassetteController : MonoBehaviour
         }
         else
         {
-            Destroy(gameObject);
+            Destroy(gameObject);//otherwise destroy the cassette controller
             return;
         }
     }
     private void Start()
     {
-        addCassette(0);
-        walkman = this.gameObject.GetComponent<AudioSource>();
-        walkman.clip = songs[0];
+        addCassette(0);//add the first cassette to the inventory
+        walkman = this.gameObject.GetComponent<AudioSource>();//set the walkman
+        walkman.clip = songs[0];//put the first cassette in the walkman
         walkman.Play();  //play the first song at the start of the game
         currentSong = inventory[0];     //make sure the correct song is the currentSong
-        userInterface.highlightSong(currentSong);
+        userInterface.highlightSong(currentSong);//highlight the first song on the hotbar
     }
 
     private void Update()
     {
         if(Input.GetKeyUp("0") && inventory[9] >= 0) //if the input of the player matcxhes a spot in the inventory that has a cassette
         {
-            currentSong = inventory[9];
-            walkman.clip = songs[currentSong];
-            userInterface.highlightSong(currentSong);
-            walkman.Play();  //and play the next song
+            currentSong = inventory[9]; //set the current song to that cassette
+            walkman.clip = songs[currentSong];  //then change teh cassette
+            userInterface.highlightSong(currentSong); //then highlight it on the hotbar
+            walkman.Play();  //and play the song
         }
         else if (Input.GetKeyUp("1") && inventory[0] >= 0) //the same as the last statement. important to note the index are off by 1
         {                                                  //this is because the keyboard numbers are ordered   1234567890

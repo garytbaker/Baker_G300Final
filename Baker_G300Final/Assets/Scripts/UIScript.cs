@@ -22,4 +22,13 @@ public class UIScript : MonoBehaviour
     {
         icons[cassetteNumber].gameObject.SetActive(true);
     }
+
+    public void highlightSong( int cassetteNumber)
+    {
+        for(int i =0; i < 10; i++) 
+        {
+            icons[i].color = Color.grey;
+        }
+        icons[cassetteNumber].color = Color.white;
+    }
 }

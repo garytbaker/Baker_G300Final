@@ -61,6 +61,7 @@
     <Compile Include="Assets\Scripts\CassetteController.cs" />
     <Compile Include="Assets\Scripts\OrbData.cs" />
     <Compile Include="Assets\Scripts\Portal.cs" />
+    <Compile Include="Assets\Scripts\UIScript.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

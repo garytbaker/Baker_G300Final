@@ -45,6 +45,7 @@ public class CassetteController : MonoBehaviour
         walkman.clip = songs[0];
         walkman.Play();  //play the first song at the start of the game
         currentSong = inventory[0];     //make sure the correct song is the currentSong
+        userInterface.highlightSong(currentSong);
     }
 
     private void Update()
@@ -53,6 +54,7 @@ public class CassetteController : MonoBehaviour
         {
             currentSong = inventory[9];
             walkman.clip = songs[currentSong];
+            userInterface.highlightSong(currentSong);
             walkman.Play();  //and play the next song
         }
         else if (Input.GetKeyUp("1") && inventory[0] >= 0) //the same as the last statement. important to note the index are off by 1
@@ -60,6 +62,7 @@ public class CassetteController : MonoBehaviour
                                                            //but the array is set up like                       0123456789
             currentSong = inventory[0];                    // by offsetting, the layout of each matches up
             walkman.clip = songs[currentSong];
+            userInterface.highlightSong(currentSong);
             walkman.Play();  //and play the next song
         }
         else if (Input.GetKeyUp("2") && inventory[1] >= 0)
@@ -67,6 +70,7 @@ public class CassetteController : MonoBehaviour
             
             currentSong = inventory[1];
             walkman.clip = songs[currentSong];
+            userInterface.highlightSong(currentSong);
             walkman.Play();  
 
         }
@@ -75,6 +79,7 @@ public class CassetteController : MonoBehaviour
             
             currentSong = inventory[2];
             walkman.clip = songs[currentSong];
+            userInterface.highlightSong(currentSong);
             walkman.Play();
 
         }
@@ -83,6 +88,7 @@ public class CassetteController : MonoBehaviour
             
             currentSong = inventory[3];
             walkman.clip = songs[currentSong];
+            userInterface.highlightSong(currentSong);
             walkman.Play();
 
         }
@@ -91,6 +97,7 @@ public class CassetteController : MonoBehaviour
           
             currentSong = inventory[4];
             walkman.clip = songs[currentSong];
+            userInterface.highlightSong(currentSong);
             walkman.Play();
 
         }
@@ -99,6 +106,7 @@ public class CassetteController : MonoBehaviour
             
             currentSong = inventory[5];
             walkman.clip = songs[currentSong];
+            userInterface.highlightSong(currentSong);
             walkman.Play();
 
         }
@@ -107,6 +115,7 @@ public class CassetteController : MonoBehaviour
             
             currentSong = inventory[6];
             walkman.clip = songs[currentSong];
+            userInterface.highlightSong(currentSong);
             walkman.Play();
 
         }
@@ -115,6 +124,7 @@ public class CassetteController : MonoBehaviour
           
             currentSong = inventory[7];
             walkman.clip = songs[currentSong];
+            userInterface.highlightSong(currentSong);
             walkman.Play();
             ;
         }
@@ -123,6 +133,7 @@ public class CassetteController : MonoBehaviour
             
             currentSong = inventory[8];
             walkman.clip = songs[currentSong];
+            userInterface.highlightSong(currentSong);
             walkman.Play();
         }
     }

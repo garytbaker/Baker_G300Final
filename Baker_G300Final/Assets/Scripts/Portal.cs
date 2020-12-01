@@ -21,7 +21,7 @@ public class Portal : MonoBehaviour
         
     }
 
-    private void OnCollisionExit(Collision collision)
+    private void OnCollisionExit2D(Collision2D collision)
     {
         if (collision.gameObject.tag == "Player")
         {

@@ -13,6 +13,18 @@ public class Portal : MonoBehaviour
             {
                 SceneManager.LoadScene(2);
             }
+            else
+            {
+                gameObject.transform.GetChild(1).gameObject.SetActive(true);
+            }
         }
+        
     }
+
+    private void OnCollisionExit(Collision collision)
+    {
+        if (collision.gameObject.tag == "Player")
+        {
+
+        }
 }

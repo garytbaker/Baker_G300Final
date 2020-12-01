@@ -35,7 +35,10 @@ public class PlayerMovement : MonoBehaviour
        if (collision.tag == "Cassette")                 //if the player collides with a cassette
         {
             CassetteController.CC.addCassette(collision.gameObject.GetComponent<CassetteData>().cassetteNumber);  //add the cassette to the inventory
-            collision.gameObject.SetActive(false); //remove the cassette from the scene
+            collision.gameObject.transform.GetChild(0).gameObject.SetActive(false);
+            collision.gameObject.transform.GetChild(1).gameObject.SetActive(true);
+            
+            //collision.gameObject.SetActive(false); //remove the cassette from the scene
         }
        if(collision.tag == "Orb")
         {

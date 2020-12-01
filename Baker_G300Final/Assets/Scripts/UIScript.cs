@@ -6,17 +6,12 @@ public class UIScript : MonoBehaviour
 {
     public Image[] icons;
 
-    // Start is called before the first frame update
-    void Start()
+
+    private void Awake()
     {
-        
+        DontDestroyOnLoad(gameObject);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 
     public void unlockCassette(int cassetteNumber)
     {

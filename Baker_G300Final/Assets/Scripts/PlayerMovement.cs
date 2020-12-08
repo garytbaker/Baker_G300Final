@@ -9,6 +9,9 @@ public class PlayerMovement : MonoBehaviour
 
     public Rigidbody2D playerRigidBody;  //the players rigidbody
 
+    public Animator animator;  //the player's animator
+
+
     Vector2 movement;  //the movement the player needs
 
     private void Start()
@@ -70,6 +73,10 @@ public class PlayerMovement : MonoBehaviour
         {
             Application.Quit();
         }
+
+        animator.SetFloat("Horizontal", movement.x);
+        animator.SetFloat("Vertical", movement.y);
+        animator.SetFloat("Speed", movement.sqrMagnitude);
     }
 
     private void FixedUpdate()

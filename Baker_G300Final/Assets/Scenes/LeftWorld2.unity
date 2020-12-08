@@ -3455,7 +3455,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3486163373111331518, guid: 22b0dbc97d8778742ba7edabc10e7c31, type: 3}
       propertyPath: cassetteNumber
-      value: 3
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 22b0dbc97d8778742ba7edabc10e7c31, type: 3}

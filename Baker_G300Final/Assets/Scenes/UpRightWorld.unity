@@ -660,13 +660,21 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: f4cd5188a8a1daa498de8373d77978df, type: 3}
+    - target: {fileID: 5371157973194147858, guid: e44a3f03cfc80cd4a8091b56d7cbc976, type: 3}
+      propertyPath: m_Size.x
+      value: 12.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5371157973194147858, guid: e44a3f03cfc80cd4a8091b56d7cbc976, type: 3}
+      propertyPath: m_Size.y
+      value: 16.6
+      objectReference: {fileID: 0}
     - target: {fileID: 5371157973194147859, guid: e44a3f03cfc80cd4a8091b56d7cbc976, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 7.32
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5371157973194147859, guid: e44a3f03cfc80cd4a8091b56d7cbc976, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.59
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5371157975006762641, guid: e44a3f03cfc80cd4a8091b56d7cbc976, type: 3}
       propertyPath: orbNumber
@@ -678,11 +686,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5371157975006762647, guid: e44a3f03cfc80cd4a8091b56d7cbc976, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.1272187
+      value: 5.61
       objectReference: {fileID: 0}
     - target: {fileID: 5371157975006762647, guid: e44a3f03cfc80cd4a8091b56d7cbc976, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.5450535
+      value: 1.02
       objectReference: {fileID: 0}
     - target: {fileID: 5371157975006762647, guid: e44a3f03cfc80cd4a8091b56d7cbc976, type: 3}
       propertyPath: m_LocalPosition.z

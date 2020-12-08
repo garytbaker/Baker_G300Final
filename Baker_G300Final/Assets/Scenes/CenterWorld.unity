@@ -1568,6 +1568,7 @@ MonoBehaviour:
   - {fileID: 437335979}
   - {fileID: 2205538}
   - {fileID: 449669263}
+  hotbar: {fileID: 1068220957}
 --- !u!1001 &313679313
 PrefabInstance:
   m_ObjectHideFlags: 0

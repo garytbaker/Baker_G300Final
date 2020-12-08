@@ -11,7 +11,7 @@ public class Portal : MonoBehaviour
         {
             if (CassetteController.CC.orbs[0] == true && CassetteController.CC.orbs[1] == true) //and he collected both of the orbs
             {
-                SceneManager.LoadScene(2); //go to the win screen
+                SceneManager.LoadScene(9); //go to the win screen
             }
             else
             {

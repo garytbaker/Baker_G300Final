@@ -40,6 +40,7 @@ public class CassetteController : MonoBehaviour
     }
     private void Start()
     {
+        userInterface.turnOnHotBar();//turns on the hotbar
         addCassette(0);//add the first cassette to the inventory
         walkman = this.gameObject.GetComponent<AudioSource>();//set the walkman
         walkman.clip = songs[0];//put the first cassette in the walkman

@@ -22,7 +22,7 @@ public class UIScript : MonoBehaviour
     {
         for(int i =0; i < 10; i++) //for every icon
         {
-            icons[i].color = new Color(.7f,.7f,.7f,1);//set its color to grey
+            icons[i].color = new Color(.6f,.6f,.6f,1);//set its color to grey
         }
         icons[cassetteNumber].color = Color.white; //then highlight the one that is playing by turning it white
     }

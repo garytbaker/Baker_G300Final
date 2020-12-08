@@ -11,7 +11,34 @@ public class PlayerMovement : MonoBehaviour
 
     Vector2 movement;  //the movement the player needs
 
-  
+    private void Start()
+    {
+        if (SceneManager.GetActiveScene().buildIndex == 1)
+        {
+            if(CassetteController.CC.previousLevel == 2)
+            {
+                gameObject.transform.position = new Vector3(-8.28999996f, -2.82999992f, 0);
+            }
+            if (CassetteController.CC.previousLevel == 4)
+            {
+                gameObject.transform.position = new Vector3(2.75999999f, -3.3900001f, 0);
+            }
+            if (CassetteController.CC.previousLevel == 3)
+            {
+                gameObject.transform.position = new Vector3(7.78999996f, 1.72000003f, 0);
+            }
+            if (CassetteController.CC.previousLevel == 8)
+            {
+                gameObject.transform.position = new Vector3(3.57999992f, 3.00999999f, 0);
+            }
+            if (CassetteController.CC.previousLevel == 7)
+            {
+                gameObject.transform.position = new Vector3(-4.73999977f, 3.00999999f, 0);
+            }
+        }
+
+        CassetteController.CC.previousLevel = SceneManager.GetActiveScene().buildIndex;
+    }
     // Update is called once per frame
     void Update()
     {

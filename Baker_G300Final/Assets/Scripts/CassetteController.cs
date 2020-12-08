@@ -11,7 +11,7 @@ public class CassetteController : MonoBehaviour
     public static CassetteController CC;  //used for the singleton pattern
     private AudioSource walkman; //the source that will play the different audio clips
     public UIScript userInterface;  //the UI reference so the controller can interact with the UI
-
+    public int previousLevel = 0;
 
     public bool[] orbs = { false,false };//this is the orb inventory
     public void addCassette(int cassetteNumber)

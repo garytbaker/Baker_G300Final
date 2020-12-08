@@ -5,11 +5,20 @@ using UnityEngine.UI;
 public class UIScript : MonoBehaviour
 {
     public Image[] icons;   //the icons on the UI indicating the songs
-
+    private UIScript ThisUI = null;
 
     private void Awake()
     {
-        DontDestroyOnLoad(gameObject); //persistent through level changes
+        if (ThisUI == null) //if there is no signleton CassetteController
+        {
+            ThisUI = this;//make this the singleton
+            DontDestroyOnLoad(gameObject);//make it persitent through scenes
+        }
+        else
+        {
+            Destroy(gameObject);//otherwise destroy the cassette controller
+            return;
+        }
     }
 
 

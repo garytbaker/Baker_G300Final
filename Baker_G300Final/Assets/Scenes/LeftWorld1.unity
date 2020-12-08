@@ -5693,6 +5693,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: eb24d91a9c9f8df458b6ef068deed848, type: 3}
   - {fileID: 8300000, guid: 82770a863d81b3a479db11a9f840d2fb, type: 3}
   userInterface: {fileID: 0}
+  previousLevel: 0
   orbs: 0000
 --- !u!82 &1396490377
 AudioSource:
@@ -8907,6 +8908,14 @@ PrefabInstance:
     - target: {fileID: 5399765025133512227, guid: ce653fd94f2a7694991259b6c6cb194c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5399765025400230628, guid: ce653fd94f2a7694991259b6c6cb194c, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -7.79
+      objectReference: {fileID: 0}
+    - target: {fileID: 5399765025400230628, guid: ce653fd94f2a7694991259b6c6cb194c, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 3.57
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ce653fd94f2a7694991259b6c6cb194c, type: 3}

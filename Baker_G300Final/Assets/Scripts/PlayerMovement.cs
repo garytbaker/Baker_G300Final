@@ -36,7 +36,28 @@ public class PlayerMovement : MonoBehaviour
                 gameObject.transform.position = new Vector3(-4.73999977f, 3.00999999f, 0);
             }
         }
-
+        if (SceneManager.GetActiveScene().buildIndex == 2)
+        {
+            if (CassetteController.CC.previousLevel == 1)
+            {
+                gameObject.transform.position = new Vector3(8.60999966f, -1.66999996f, 0);
+            }
+            if (CassetteController.CC.previousLevel == 6)
+            {
+                gameObject.transform.position = new Vector3(-7.78999996f, 3.56999993f, 0);
+            }
+        }
+        if (SceneManager.GetActiveScene().buildIndex == 3)
+        {
+            if (CassetteController.CC.previousLevel == 1)
+            {
+                gameObject.transform.position = new Vector3(-8.85000038f, -3.36999989f, 0);
+            }
+            if (CassetteController.CC.previousLevel == 5)
+            {
+                gameObject.transform.position = new Vector3(7.5999999f, 1.69000006f, 0);
+            }
+        }
         CassetteController.CC.previousLevel = SceneManager.GetActiveScene().buildIndex;
     }
     // Update is called once per frame

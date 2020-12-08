@@ -6269,6 +6269,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: eb24d91a9c9f8df458b6ef068deed848, type: 3}
   - {fileID: 8300000, guid: 82770a863d81b3a479db11a9f840d2fb, type: 3}
   userInterface: {fileID: 0}
+  previousLevel: 0
   orbs: 0000
 --- !u!82 &1396490377
 AudioSource:
@@ -9624,11 +9625,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5399765025133512227, guid: ce653fd94f2a7694991259b6c6cb194c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 7.6
       objectReference: {fileID: 0}
     - target: {fileID: 5399765025133512227, guid: ce653fd94f2a7694991259b6c6cb194c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.78
+      value: 1.69
       objectReference: {fileID: 0}
     - target: {fileID: 5399765025133512227, guid: ce653fd94f2a7694991259b6c6cb194c, type: 3}
       propertyPath: m_LocalPosition.z

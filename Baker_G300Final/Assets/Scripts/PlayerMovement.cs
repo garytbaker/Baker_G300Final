@@ -40,11 +40,11 @@ public class PlayerMovement : MonoBehaviour
         {
             if (CassetteController.CC.previousLevel == 1)
             {
-                gameObject.transform.position = new Vector3(8.60999966f, -1.66999996f, 0);
+                gameObject.transform.position = new Vector3(8.71000004f, -3.3599999f, 0);
             }
             if (CassetteController.CC.previousLevel == 6)
             {
-                gameObject.transform.position = new Vector3(-7.78999996f, 3.56999993f, 0);
+                gameObject.transform.position = new Vector3(-7.98999977f, 1.85000002f, 0);
             }
         }
         if (SceneManager.GetActiveScene().buildIndex == 3)

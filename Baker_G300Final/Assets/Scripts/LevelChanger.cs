@@ -7,9 +7,9 @@ public class LevelChanger : MonoBehaviour
     public int ToLevel;   //this is the build index for the scene we want to change to.
 
 
-    private void OnTriggerEnter2D(Collider other)
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.tag == "Player")
+        if (other.tag == "Player")
         {
             SceneManager.LoadScene(ToLevel);
         }

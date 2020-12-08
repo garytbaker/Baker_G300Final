@@ -21,6 +21,9 @@ EditorBuildSettings:
     path: Assets/Scenes/BottomWorld.unity
     guid: 34063afeb0c49ff4aaea2dc140ebfb54
   - enabled: 1
+    path: Assets/Scenes/RightWorld2.unity
+    guid: 383db1e6f3c98c445b1a4d3894c66ad0
+  - enabled: 1
     path: Assets/Scenes/End.unity
     guid: d161b8b705ec72d49974d6138d8572ff
   m_configObjects: {}

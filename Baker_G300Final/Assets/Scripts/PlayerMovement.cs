@@ -13,47 +13,47 @@ public class PlayerMovement : MonoBehaviour
 
     private void Start()
     {
-        if (SceneManager.GetActiveScene().buildIndex == 1)
+        if (SceneManager.GetActiveScene().buildIndex == 1) //if the current level is the middle scene
         {
-            if(CassetteController.CC.previousLevel == 2)
+            if(CassetteController.CC.previousLevel == 2)  //checks where you came from then puts the player at teh corect spawn.
             {
                 gameObject.transform.position = new Vector3(-8.28999996f, -2.82999992f, 0);
             }
-            if (CassetteController.CC.previousLevel == 4)
+            if (CassetteController.CC.previousLevel == 4)//checks where you came from then puts the player at teh corect spawn.
             {
                 gameObject.transform.position = new Vector3(2.75999999f, -3.3900001f, 0);
             }
-            if (CassetteController.CC.previousLevel == 3)
+            if (CassetteController.CC.previousLevel == 3)//checks where you came from then puts the player at teh corect spawn.
             {
                 gameObject.transform.position = new Vector3(7.78999996f, 1.72000003f, 0);
             }
-            if (CassetteController.CC.previousLevel == 8)
+            if (CassetteController.CC.previousLevel == 8)//checks where you came from then puts the player at teh corect spawn.
             {
                 gameObject.transform.position = new Vector3(3.57999992f, 3.00999999f, 0);
             }
-            if (CassetteController.CC.previousLevel == 7)
+            if (CassetteController.CC.previousLevel == 7)//checks where you came from then puts the player at teh corect spawn.
             {
                 gameObject.transform.position = new Vector3(-4.73999977f, 3.00999999f, 0);
             }
         }
-        if (SceneManager.GetActiveScene().buildIndex == 2)
+        if (SceneManager.GetActiveScene().buildIndex == 2)///if it is TerrainHeightmapSyncControl transitional left level
         {
-            if (CassetteController.CC.previousLevel == 1)
+            if (CassetteController.CC.previousLevel == 1)//checks where you came from then puts the player at teh corect spawn.
             {
                 gameObject.transform.position = new Vector3(8.71000004f, -3.3599999f, 0);
             }
-            if (CassetteController.CC.previousLevel == 6)
+            if (CassetteController.CC.previousLevel == 6)//checks where you came from then puts the player at teh corect spawn.
             {
                 gameObject.transform.position = new Vector3(-7.98999977f, 1.85000002f, 0);
             }
         }
-        if (SceneManager.GetActiveScene().buildIndex == 3)
+        if (SceneManager.GetActiveScene().buildIndex == 3)  //if it is the transitional right level
         {
-            if (CassetteController.CC.previousLevel == 1)
+            if (CassetteController.CC.previousLevel == 1)//checks where you came from then puts the player at teh corect spawn.
             {
                 gameObject.transform.position = new Vector3(-8.85000038f, -3.36999989f, 0);
             }
-            if (CassetteController.CC.previousLevel == 5)
+            if (CassetteController.CC.previousLevel == 5)//checks where you came from then puts the player at teh corect spawn.
             {
                 gameObject.transform.position = new Vector3(7.5999999f, 1.69000006f, 0);
             }

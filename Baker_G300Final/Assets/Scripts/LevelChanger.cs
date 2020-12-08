@@ -1,18 +1,18 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 public class LevelChanger : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public int ToLevel;   //this is the build index for the scene we want to change to.
+
+
+    private void OnTriggerEnter2D(Collider other)
     {
-        
+        if (other.gameObject.tag == "Player")
+        {
+            SceneManager.LoadScene(ToLevel);
+        }
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }

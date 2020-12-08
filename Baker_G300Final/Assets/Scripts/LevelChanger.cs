@@ -9,9 +9,9 @@ public class LevelChanger : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.tag == "Player")
+        if (other.tag == "Player") //if the player goes through the door
         {
-            SceneManager.LoadScene(ToLevel);
+            SceneManager.LoadScene(ToLevel); //go to the correct level
         }
     }
 

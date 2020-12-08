@@ -9,9 +9,9 @@ public class CassetteData : MonoBehaviour
 
     private void Start()
     {
-        if (CassetteController.CC.inventory[cassetteNumber] == cassetteNumber)
+        if (CassetteController.CC.inventory[cassetteNumber] == cassetteNumber) //if the song has already been selected
         {
-            gameObject.SetActive(false);
+            gameObject.SetActive(false); //do not respawn
         }
     }
 }

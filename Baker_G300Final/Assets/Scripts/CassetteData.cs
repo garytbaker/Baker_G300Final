@@ -7,11 +7,11 @@ public class CassetteData : MonoBehaviour
     public int cassetteNumber = 0;  //the data for which song the cassette holds
 
 
-    private void Awake()
+    private void Start()
     {
-        if (CassetteController.CC.inventory[cassetteNumber] != cassetteNumber)
+        if (CassetteController.CC.inventory[cassetteNumber] == cassetteNumber)
         {
-            gameObject.SetActive(true);
+            gameObject.SetActive(false);
         }
     }
 }

@@ -14,7 +14,11 @@ public class OpenToGame : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.anyKeyDown)
+        if (Input.GetKey(KeyCode.Escape))  //press escape to end the game.
+        {
+            Application.Quit();
+        }
+        if (Input.anyKeyDown)  //if any key is pressed start teh game
         {
             SceneManager.LoadScene(1);
         }

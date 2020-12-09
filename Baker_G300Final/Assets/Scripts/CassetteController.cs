@@ -51,7 +51,11 @@ public class CassetteController : MonoBehaviour
 
     private void Update()
     {
-        if(Input.GetKeyUp("0") && inventory[9] >= 0) //if the input of the player matcxhes a spot in the inventory that has a cassette
+        if (Input.GetKey(KeyCode.Escape))  //press escape to end the game.
+        {
+            Application.Quit();
+        }
+        if (Input.GetKeyUp("0") && inventory[9] >= 0) //if the input of the player matcxhes a spot in the inventory that has a cassette
         {
             currentSong = inventory[9]; //set the current song to that cassette
             walkman.clip = songs[currentSong];  //then change teh cassette

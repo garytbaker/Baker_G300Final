@@ -102,10 +102,7 @@ public class PlayerMovement : MonoBehaviour
             StartCoroutine(objectDeactivator(collision.gameObject)); //turn off the collected text after one second using coroutine
         }
     }
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        print(collision.gameObject.name);
-    }
+    
     IEnumerator objectDeactivator(GameObject obj)  //this is a coroutine that will wait one second the set the active of the object to off
     {
         yield return new WaitForSeconds(1); //wait one second

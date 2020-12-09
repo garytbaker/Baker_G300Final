@@ -354,7 +354,7 @@ Transform:
   m_GameObject: {fileID: 756286387}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.16, y: -0.11, z: -7.876963}
-  m_LocalScale: {x: 0.55315727, y: 0.3789844, z: 0.05}
+  m_LocalScale: {x: 0.49784154, y: 0.3789844, z: 0.05}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 5
@@ -402,18 +402,19 @@ PolygonCollider2D:
   m_Points:
     m_Paths:
     - - {x: -1.1051666, y: -4.816678}
-      - {x: -8.338238, y: -4.780577}
-      - {x: -9.626519, y: -4.1475773}
-      - {x: -9.532255, y: 4.1056404}
-      - {x: -8.753912, y: 4.7192016}
-      - {x: 9.329754, y: 4.4426203}
-      - {x: 9.630402, y: 3.9587622}
-      - {x: 9.310192, y: -2.6725433}
-      - {x: 9.101702, y: -4.037232}
-      - {x: 7.956505, y: -4.7513404}
+      - {x: -7.520238, y: -4.8301535}
+      - {x: -8.627628, y: -4.148589}
+      - {x: -8.709367, y: -3.9244862}
+      - {x: -8.639891, y: 4.130428}
+      - {x: -7.935911, y: 4.644838}
+      - {x: 8.263873, y: 4.4921966}
+      - {x: 8.638886, y: 4.057914}
+      - {x: 8.368251, y: -2.6477551}
+      - {x: 8.085397, y: -3.9380798}
+      - {x: 7.5351105, y: -4.652189}
       - {x: 1.944375, y: -4.568785}
-      - {x: 1.3840637, y: -4.7744403}
-      - {x: 1.4810324, y: -5.2337937}
+      - {x: 1.2105485, y: -4.8240166}
+      - {x: 1.3323051, y: -5.2337937}
       - {x: 10.405, y: -5.261411}
       - {x: 10.838119, y: 5.1062956}
       - {x: -10.679723, y: 5.3275785}
@@ -552,6 +553,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: eb24d91a9c9f8df458b6ef068deed848, type: 3}
   - {fileID: 8300000, guid: 82770a863d81b3a479db11a9f840d2fb, type: 3}
   userInterface: {fileID: 0}
+  previousLevel: 0
   orbs: 0000
 --- !u!82 &1396490377
 AudioSource:
@@ -785,11 +787,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5399765025133512227, guid: ce653fd94f2a7694991259b6c6cb194c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.03
+      value: 0.29
       objectReference: {fileID: 0}
     - target: {fileID: 5399765025133512227, guid: ce653fd94f2a7694991259b6c6cb194c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.81
+      value: -3.95
       objectReference: {fileID: 0}
     - target: {fileID: 5399765025133512227, guid: ce653fd94f2a7694991259b6c6cb194c, type: 3}
       propertyPath: m_LocalPosition.z

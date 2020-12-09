@@ -20,45 +20,45 @@ public class PlayerMovement : MonoBehaviour
         {
             if(CassetteController.CC.previousLevel == 2)  //checks where you came from then puts the player at teh corect spawn.
             {
-                gameObject.transform.position = new Vector3(-8.28999996f, -2.82999992f, 0);
+                gameObject.transform.position = new Vector3(-7.19999981f, -2.13000011f, 0);
             }
             if (CassetteController.CC.previousLevel == 4)//checks where you came from then puts the player at teh corect spawn.
             {
-                gameObject.transform.position = new Vector3(2.75999999f, -3.3900001f, 0);
+                gameObject.transform.position = new Vector3(3.6099999f, -2.8499999f, 0);
             }
             if (CassetteController.CC.previousLevel == 3)//checks where you came from then puts the player at teh corect spawn.
             {
-                gameObject.transform.position = new Vector3(7.78999996f, 1.72000003f, 0);
+                gameObject.transform.position = new Vector3(6.65999985f, 2.25999999f, 0);
             }
             if (CassetteController.CC.previousLevel == 8)//checks where you came from then puts the player at teh corect spawn.
             {
-                gameObject.transform.position = new Vector3(3.57999992f, 3.00999999f, 0);
+                gameObject.transform.position = new Vector3(3.24000001f, 3.20000005f, 0);
             }
             if (CassetteController.CC.previousLevel == 7)//checks where you came from then puts the player at teh corect spawn.
             {
-                gameObject.transform.position = new Vector3(-4.73999977f, 3.00999999f, 0);
+                gameObject.transform.position = new Vector3(-2.71000004f, 3.5f, 0);
             }
         }
         if (SceneManager.GetActiveScene().buildIndex == 2)///if it is TerrainHeightmapSyncControl transitional left level
         {
-            if (CassetteController.CC.previousLevel == 1)//checks where you came from then puts the player at teh corect spawn.
-            {
-                gameObject.transform.position = new Vector3(8.71000004f, -3.3599999f, 0);
-            }
             if (CassetteController.CC.previousLevel == 6)//checks where you came from then puts the player at teh corect spawn.
             {
-                gameObject.transform.position = new Vector3(-7.98999977f, 1.85000002f, 0);
+                gameObject.transform.position = new Vector3(-7.19000006f, 1.85000002f, 0);
+            }
+            if (CassetteController.CC.previousLevel == 1)//checks where you came from then puts the player at teh corect spawn.
+            {
+                gameObject.transform.position = new Vector3(8.01000023f, -3.03999996f, 0);
             }
         }
         if (SceneManager.GetActiveScene().buildIndex == 3)  //if it is the transitional right level
         {
             if (CassetteController.CC.previousLevel == 1)//checks where you came from then puts the player at teh corect spawn.
             {
-                gameObject.transform.position = new Vector3(-8.85000038f, -3.36999989f, 0);
+                gameObject.transform.position = new Vector3(-7.94000006f, -3f, 0);
             }
             if (CassetteController.CC.previousLevel == 5)//checks where you came from then puts the player at teh corect spawn.
             {
-                gameObject.transform.position = new Vector3(7.5999999f, 1.69000006f, 0);
+                gameObject.transform.position = new Vector3(6.67999983f, 1.84000003f, 0);
             }
         }
         CassetteController.CC.previousLevel = SceneManager.GetActiveScene().buildIndex;
@@ -102,7 +102,10 @@ public class PlayerMovement : MonoBehaviour
             StartCoroutine(objectDeactivator(collision.gameObject)); //turn off the collected text after one second using coroutine
         }
     }
-
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        print(collision.gameObject.name);
+    }
     IEnumerator objectDeactivator(GameObject obj)  //this is a coroutine that will wait one second the set the active of the object to off
     {
         yield return new WaitForSeconds(1); //wait one second

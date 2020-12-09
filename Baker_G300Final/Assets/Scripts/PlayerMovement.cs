@@ -69,10 +69,7 @@ public class PlayerMovement : MonoBehaviour
         movement.x = Input.GetAxisRaw("Horizontal");  //getting input from the player
         movement.y = Input.GetAxisRaw("Vertical");
         movement.Normalize();                           //normalizing it so the player goes the same speed in all directions
-        if (Input.GetKey(KeyCode.Escape))  //press escape to end the game.
-        {
-            Application.Quit();
-        }
+       
 
         animator.SetFloat("Horizontal", movement.x);
         animator.SetFloat("Vertical", movement.y);
